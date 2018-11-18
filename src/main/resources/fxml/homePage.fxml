@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<StackPane prefHeight="930" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.soft1841.controller.HomeController">
+   <children>
+   
+           <BorderPane fx:id="homePage">
+               <top>
+                   <AnchorPane fx:id="topAnchorPane">
+                       <children>
+                           <Label fx:id="title" layoutX="189.0" layoutY="5.0" text="通讯录" visible="false" AnchorPane.leftAnchor="189.0" AnchorPane.topAnchor="5.0">
+                               <font>
+                                   <Font size="25.0" />
+                               </font>
+                           </Label>
+   
+                           <TextField fx:id="searchText" layoutY="19.0" prefHeight="49.0"
+                                      prefWidth="454.0" AnchorPane.leftAnchor="0.0"
+                                      AnchorPane.topAnchor="19.0" styleClass="form-control"
+                                      text="请输入想要查找的信息"  onMouseClicked="#clearText">
+                            </TextField>
+                           <Button fx:id="serachButton" layoutX="357.0" layoutY="19.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="97.0" text="搜索" onMouseClicked="#searchByKey"/>
+   
+                           <HBox alignment="BASELINE_CENTER" spacing="80" AnchorPane.bottomAnchor="5" AnchorPane.topAnchor="90">
+                               <children>
+                                   <Button fx:id="homeButton" text="首页"  styleClass="btn,btn-default" onMouseClicked="#backStar"/>
+                                   <ComboBox fx:id="sexComboBox" promptText="性别"  styleClass="btn,btn-default,dropdown-toggle" onAction="#sortBySex"></ComboBox>
+                                   <ComboBox fx:id="doorComboBox" promptText="宿舍" styleClass="btn,btn-default,dropdown-toggle" onAction="#sortBydormitory"/>
+                               </children>
+                           </HBox>
+   
+                       </children>
+                   </AnchorPane>
+               </top>
+   
+               <center>
+                   <ListView fx:id="msgList">
+
+                </ListView>
+               </center>
+           </BorderPane>
+   
+       <BorderPane fx:id="ex_page" visible="false">
+
+    </BorderPane>
+   </children>
+
+
+</StackPane>

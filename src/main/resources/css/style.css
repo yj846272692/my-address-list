@@ -1,0 +1,23 @@
+.root{
+    -fx-font-size: 17px;
+}
+
+.combo-box{
+    -fx-text-fill: rgb(255, 255, 255);
+}
+#title{
+    -fx-text-fill:rgb(255, 255, 255);
+    -fx-font-size: 25;
+    -fx-font-family: "Segoe UI Black";
+    -fx-font-weight: bold;
+}
+#topAnchorPane{
+    -fx-background-color: linear-gradient(to right, rgb(72, 68, 73), rgb(39, 41, 45), rgb(72, 68, 73));
+}
+.list-view{
+    -fx-font-size: 20px;
+}
+
+
+
+
